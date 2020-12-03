@@ -1,11 +1,15 @@
-import { createMuiTheme, Grid, ThemeProvider } from "@material-ui/core";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import React from "react";
 import NavBar from "./componentes/NavBar";
-import MainSlider from "./componentes/MainSlider";
-import SobreTarjeta from "./componentes/SobreTarjeta";
+import Servicios from "./componentes/Servicios";
+import Ubicacion from "./componentes/Ubicacion"
+import Inicio from "./componentes/Inicio";
 import Footer from "./componentes/Footer";
+import Contacto from "./componentes/Contacto"
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Agenda from "./componentes/Agenda";
 
 const theme = createMuiTheme({
   palette:{
@@ -22,15 +26,18 @@ const theme = createMuiTheme({
 function App() {
   return (
     <ThemeProvider theme={theme} >
-     <Grid container spacing={3} >
-       <Grid item>
+      <BrowserRouter>
         <NavBar/>
-        <MainSlider />
-        <SobreTarjeta/>
+        <Switch>
+          <Route path="/Contacto" component={Contacto}/>
+          <Route path="/Ubicacion" component={Ubicacion}/>
+          <Route path="/Servicios" component={Servicios}/>
+          <Route path="/Agenda" component={Agenda}/>
+          <Route path="/Inicio" component={Inicio}/>
+        </Switch>
         <Footer/>
-       </Grid>
-     </Grid>
-    
+
+      </BrowserRouter>
   </ThemeProvider>
 
   
