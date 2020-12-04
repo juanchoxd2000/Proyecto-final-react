@@ -15,9 +15,9 @@ function Footer(){
     <div style={{backgroundColor:'#ffe2c3'}} >
     <div className="container">
         <div className="row py-4 d-flex align-items-center" >
-        <Button><FacebookIcon/></Button>    
-        <Button><InstagramIcon/></Button>    
-        <Button><WhatsAppIcon/></Button>    
+        <Button href="https://www.facebook.com/JMbrowss"><FacebookIcon/></Button>    
+        <Button href="https://www.instagram.com/browsjm/"><InstagramIcon/></Button>    
+        <Button href="https://api.whatsapp.com/send?phone=59891716706&text=&source=&data=&app_absent="><WhatsAppIcon/></Button>    
         <div className="col-md-12 text-center"> </div>    
 
     </div>

@@ -11,18 +11,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
     const items = [
         {
           src: "cejas.jpeg",
-          altText: 'Primera imagen',
-          
+          altText: 'Primera imagen'
         },
         {
           src: "pestañas.jpeg",
-          altText: 'Segunda imagen',
-          
+          altText: 'Segunda imagen'
         },
         {
           src: "uñas.jpeg",
-          altText: 'Tercera imagen',
-          
+          altText: 'Tercera imagen'
         }
       ];
 const MainSlider = (props) => {

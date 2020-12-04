@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import {NavLink} from "react-router-dom";
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Drawer,AppBar, Toolbar, CssBaseline, List, Typography, Divider, IconButton, ListItem, ListItemIcon, 
@@ -94,29 +95,14 @@ const useStyles = makeStyles((theme) => ({
           <Typography variant="h6" noWrap color="secondary" className={classes.title}>
             BROWS
           </Typography>
-          <IconButton
-            color="secondary"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerOpen}
-            className={clsx(open && classes.hide)}
-          >
+          <IconButton color="secondary" aria-label="open drawer" edge="end" onClick={handleDrawerOpen} className={clsx(open && classes.hide)}>
             <MenuIcon />
           </IconButton>
         </Toolbar>
       </AppBar>
 
     
-        <Drawer
-          className={classes.drawer}
-          variant="persistent"
-          anchor="right"
-          open={open}
-          classes={{
-            paper: classes.drawerPaper,
-          }}
-        >
-        
+        <Drawer className={classes.drawer} variant="persistent" anchor="right" open={open}classes={{paper: classes.drawerPaper}}>
               <div className={classes.drawerHeader}>
                   <IconButton onClick={handleDrawerClose}>
                     {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
@@ -124,41 +110,42 @@ const useStyles = makeStyles((theme) => ({
                 </div>
                 <Divider />
                 <List>
-                <ListItem button className={classes.botones}>
+                  <NavLink to="/" activeClassName="active"><ListItem button className={classes.botones}>
                       <ListItemIcon>
                         <HomeIcon color="secondary"/>
                       </ListItemIcon>
                       <ListItemText primary="Inicio"/>
-                        
-                    </ListItem>
-                    <ListItem button className={classes.botones}>
+                    </ListItem></NavLink> 
+
+                    <NavLink to="/Ubicacion" activeClassName="active">  <ListItem button className={classes.botones}>
                       <ListItemIcon>
                         <RoomIcon color="secondary"/>
                       </ListItemIcon>
                       <ListItemText primary="Ubicacion"/>
-                    </ListItem>
-                    <ListItem button className={classes.botones}>
+                    </ListItem></NavLink>
+
+                    <NavLink to="/Contacto" activeClassName="active">  <ListItem button className={classes.botones}>
                       <ListItemIcon>
                         <MailIcon color="secondary"/>
                       </ListItemIcon>
                       <ListItemText primary="Contacto"/>
-                    </ListItem>
-                    <ListItem button className={classes.botones}>
+                    </ListItem></NavLink>
+
+                    <NavLink to="/Servicios" activeClassName="active"> <ListItem button className={classes.botones}>
                       <ListItemIcon>
                         <ShoppingCartIcon color="secondary"/>
                       </ListItemIcon>
                       <ListItemText primary="Servicios"/>
-                    </ListItem>
+                    </ListItem></NavLink>
                 </List>
                 <Divider />
                 <List>
-                    <ListItem button className={classes.botones}>
+                <NavLink to="/Agenda" activeClassName="active"> <ListItem button className={classes.botones}>
                       <ListItemIcon>
                         <TodayIcon color="secondary"/>
                       </ListItemIcon>
                       <ListItemText primary="Agendate"/>
-                    </ListItem>
-                  
+                    </ListItem></NavLink>-
                 </List>
               </Drawer>
             
@@ -178,11 +165,11 @@ const useStyles = makeStyles((theme) => ({
                  <Typography color="secondary" variant="h6" noWrap className={classes.title}>
                     BROWS
                  </Typography>
-                 <Button color="secondary" className={classes.botones} >Inicio</Button>
-                 <Button color="secondary" className={classes.botones} >Contacto</Button>
-                 <Button color="secondary" className={classes.botones} >Ubicacion</Button>
-                 <Button color="secondary" className={classes.botones} >Servicios</Button>
-                 <Button color="secondary" className={classes.botones} >Agendate</Button>
+                 <NavLink to="/"><Button color="secondary" className={classes.botones} >Inicio</Button></NavLink> 
+                 <NavLink to="/Contacto"> <Button color="secondary" className={classes.botones} >Contacto</Button></NavLink> 
+                 <NavLink to="/Ubicacion"><Button color="secondary" className={classes.botones} >Ubicacion</Button></NavLink> 
+                 <NavLink to="/Servicios"> <Button color="secondary" className={classes.botones} >Servicios</Button></NavLink> 
+                 <NavLink to="/Agenda"><Button color="secondary" className={classes.botones} >Agendate</Button></NavLink> 
                </Toolbar>
              </AppBar>
                    
