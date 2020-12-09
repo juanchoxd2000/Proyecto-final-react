@@ -33,7 +33,7 @@ const Servicios = (props) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="cejas.jpeg"
+          image="cejas.jpg"
           title="cejas"
         />
         <CardContent>
@@ -46,8 +46,8 @@ const Servicios = (props) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-       <Link to="/Servicios/Cejas"><Button className="btn-block" size="small" color="secondary">
-          Ver mas
+       <Link to="/Agenda"><Button className="btn-block" size="small" color="secondary">
+          Agendar
         </Button></Link>
       </CardActions>
     </Card>
@@ -57,7 +57,7 @@ const Servicios = (props) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="pestañas.jpeg"
+          image="pestañas.jpg"
           title="Pestañas"
         />
         <CardContent>
@@ -70,8 +70,8 @@ const Servicios = (props) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Link to="/Servicios/Pestañas"><Button className="btn-block" size="small" color="secondary">
-          Ver mas
+      <Link to="/Agenda"><Button className="btn-block" size="small" color="secondary">
+      Agendar
         </Button></Link>
       </CardActions>
     </Card>
@@ -81,7 +81,7 @@ const Servicios = (props) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="uñas.jpeg"
+          image="uñas.jpg"
           title="Uñas"
         />
         <CardContent>
@@ -94,8 +94,8 @@ const Servicios = (props) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Link to="/Servicios/Uñas"><Button className="btn-block" size="small" color="secondary">
-          Ver mas
+      <Link to="/Agenda"><Button className="btn-block" size="small" color="secondary">
+      Agendar
         </Button></Link>
       </CardActions>
     </Card>

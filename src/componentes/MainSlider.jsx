@@ -8,18 +8,21 @@ import {
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-    const items = [
+    const items = [ 
         {
-          src: "cejas.jpeg",
-          altText: 'Primera imagen'
+          src: "cejas.jpg",
+          altText: 'Primera imagen',
+          caption: 'algo'
         },
         {
-          src: "pestañas.jpeg",
-          altText: 'Segunda imagen'
+          src: "pestañas.jpg",
+          altText: 'Segunda imagen',
+          caption: 'algo'
         },
         {
-          src: "uñas.jpeg",
-          altText: 'Tercera imagen'
+          src: "uñas.jpg",
+          altText: 'Tercera imagen',
+          caption: 'algo'
         }
       ];
 const MainSlider = (props) => {

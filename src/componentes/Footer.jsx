@@ -28,15 +28,16 @@ function Footer(){
     <div className="row">
 
         <div className="col-md-4 mx-auto mb-4" style={{color:"white"}}>
-        <h6 className="text-uppercase font-weight-bold" >Siguenos en Instagram</h6>
+        <h6 className="text-uppercase font-weight-bold" >Ubicacion</h6>
         <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{width:"200px", height: "2px", background:"#ffe2c3"}}/>
-        <p className="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <iframe title="Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.9981681482545!2d-56.196849384334996!3d-34.906495481088946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f811ec19da28d%3A0xf1fee50c3907e361!2sJM%20Brows!5e0!3m2!1ses!2suy!4v1607007008078!5m2!1ses!2suy" style={{width:"100%", height:"80%",  border:"0", allowfullscreen:"", ariaHidden:"false", tabindex:"0"}}></iframe>
+        <div className="elfsight-app-568d0cf6-f3d1-44a3-8241-10dda3750f47"></div>
         </div>
 
         <div className="col-md-4 mx-auto mb-4" style={{color:"white"}}>
         <h6 className="text-uppercase font-weight-bold" >Siguenos en Facebook</h6>
         <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{width:"190px", height:"2px", background:"#ffe2c3"}}/>  
-        <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FJMbrowss&tabs=timeline&width=300&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400px" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
+        <iframe title="facebook" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FJMbrowss&tabs=timeline&width=300&height=600&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400px" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
         </div>
 
         <div className="col-md-3 mx-auto mb-4" style={{color:"white"}}>

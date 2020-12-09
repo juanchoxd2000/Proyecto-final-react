@@ -10,9 +10,9 @@ import {
 const SobreTarejta = (props) => {
   return (
   <div >
-    <Row sm>
+    <Row>
       <Col sm="5">
-          <img src="portada.jpeg" alt="Responsive portada" className="img-fluid" style={{margin:'20px', maxWidth:"100%"}}/>
+          <img src="portada.jpg" alt="Responsive portada" className="img-fluid" style={{margin:'20px', maxWidth:"100%"}}/>
       </Col>    
       <Col sm="7">    
           <Card style={{margin:'30px', marginTop:'40px' }}>
