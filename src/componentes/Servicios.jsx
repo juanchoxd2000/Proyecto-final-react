@@ -1,9 +1,9 @@
-import { Button,CardActionArea, Card, CardActions, CardContent, CardMedia, Typography } from '@material-ui/core';
+import { Button,CardActionArea, Card, CardActions, CardContent, CardMedia, Typography, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Link} from "react-router-dom";
-import { Row, Col,} from 'reactstrap';
+
 
 const useStyles = makeStyles({
     root: {
@@ -19,16 +19,12 @@ const Servicios = (props) => {
     const classes = useStyles();
   return (
   <div style={{marginTop:"100px",marginBottom:"40px", background:"rgba(255,226,195, .6)",
-  color:"#c5a011", padding:"20px", boxShadow:"0px 0px 10px 3px grey"}}>
-      <Row style={{textAlign:"center"}}>
-        <Col>
-        <Typography variant="h1" component="h2">
+  color:"#c5a011", padding:"20px", boxShadow:"0px 0px 10px 3px grey", textAlign:"center"}}>
+    <Typography variant="h1" component="h2">
             Servicios
           </Typography>
-        </Col>
-      </Row>
-    <Row >
-      <Col sm="4">
+      <Grid container>
+      <Grid item xs={12} sm={12} md={4}>
       <Card className={classes.root} style={{margin:'30px', marginTop:'40px' }}>
       <CardActionArea>
         <CardMedia
@@ -51,8 +47,8 @@ const Servicios = (props) => {
         </Button></Link>
       </CardActions>
     </Card>
-      </Col>    
-      <Col sm="4">    
+      </Grid>    
+      <Grid item xs={12} sm={12} md={4}>    
       <Card className={classes.root} style={{margin:'30px', marginTop:'40px' }}>
       <CardActionArea>
         <CardMedia
@@ -75,8 +71,8 @@ const Servicios = (props) => {
         </Button></Link>
       </CardActions>
     </Card>
-      </Col>
-      <Col sm="4">
+      </Grid>
+      <Grid item xs={12} sm={12} md={4}>
       <Card className={classes.root} style={{margin:'30px', marginTop:'40px' }}>
       <CardActionArea>
         <CardMedia
@@ -99,8 +95,8 @@ const Servicios = (props) => {
         </Button></Link>
       </CardActions>
     </Card>
-      </Col> 
-    </Row>
+      </Grid> 
+    </Grid>
   </div>
   );
 };

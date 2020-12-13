@@ -10,6 +10,7 @@ import Footer from "./componentes/Footer";
 import Contacto from "./componentes/Contacto"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Agenda from "./componentes/Agenda";
+import AgendaMaterial from "./componentes/AgendaMaterial"
 
 
 const theme = createMuiTheme({
@@ -32,7 +33,7 @@ function App() {
           <Route path="/contacto" component={Contacto} />
           <Route path="/ubicacion" component={Ubicacion} />
           <Route path="/servicios" component={Servicios} />
-          <Route path="/agenda" component={Agenda} />
+          <Route path="/agenda" component={AgendaMaterial} />
           <Route path="/" component={Inicio} />
         </Switch>
         <Footer />

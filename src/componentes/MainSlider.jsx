@@ -12,17 +12,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
         {
           src: "cejas.jpg",
           altText: 'Primera imagen',
-          caption: 'algo'
+          caption: 'Luce tus cejas con JM'
         },
         {
           src: "pestañas.jpg",
           altText: 'Segunda imagen',
-          caption: 'algo'
+          caption: 'Luce tus pestañas con JM'
         },
         {
           src: "uñas.jpg",
           altText: 'Tercera imagen',
-          caption: 'algo'
+          caption: 'Luce tus uñas con JM'
         }
       ];
 const MainSlider = (props) => {
